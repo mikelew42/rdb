@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+    <script>debugger;</script>
+    <link rel="preload" href="/styles.css" as="style">
+    <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v29/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2" as="font" type="font/woff2" crossorigin />
+    <!-- <script type="module" src="index.js"></script> -->
+    <script type="module" src="components.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<template id="project-card-template">
+    <style>
+        :host {
+            display: block;
+            border: 1px solid #ccc;
+            padding: 16px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+        }
+
+        h3 {
+            margin: 8px 0;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    </style>
+    <img class="image" src="" alt="Project Image">
+    <slot name="title">Default Title</slot>
+    <slot name="description">Default Description</slot>
+</template>
+  
+
+
+
+<body>
+    <header class="top-header">
+        <div class="squeeze">
+            <div class="logo"></div>
+            <nav class="top-nav">
+                <div class="nav-item">About</div>
+                <div class="nav-item">Process</div>
+                <div class="nav-item">Projects</div>
+                <div class="nav-item btn">Contact</div>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="squeeze">
+            <div class="content">
+                <div class="chevron"></div>
+                <h2>Make <span class="your">your</span> home <span class="dreamworthy">dreamworthy</span>.</h2>
+                <p>Imagine waking up every day in a home you absolutely love. That dream is within reach, and now is the perfect time to make it real.</p>
+                <div class="btn-row">
+                    <div class="btn white">Learn More</div>
+                    <div class="btn">Get Started</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="rdb-bar">
+        <div class="squeeze">
+            <h2 class="remodel">remodel</h2>
+            <h2 class="design">design</h2>
+            <h2 class="build">build</h2>
+        </div>
+    </div>
+    <div class="recent-projects">
+        <div class="background"></div>
+        <div class="squeeze">
+            <div class="projects-left">
+                <div class="heading">
+                    <div class="chevron"></div>
+                    <h2>Recent Projects</h2>
+                </div>
+                <div class="project">
+                    <div class="img"></div>
+                    <h3>Project Name</h3>
+                    <p>Project Description</p>
+                </div>
+                <div class="project">
+                    <div class="img"></div>
+                    <h3>Project Name</h3>
+                    <p>Project Description</p>
+                </div>
+            </div>
+            <div class="projects-right">
+                <div class="project">
+                    <div class="img"></div>
+                    <h3>Project Name</h3>
+                    <p>Project Description</p>
+                </div><div class="project">
+                    <div class="img"></div>
+                    <h3>Project Name</h3>
+                    <p>Project Description</p>
+                </div>
+                <div class="project">
+                    <div class="img"></div>
+                    <h3>Project Name</h3>
+                    <p>Project Description for this last item, edited again.</p>
+                </div>
+                <project-card image="project1.jpg">
+                    <h3 slot="title">Project 1</h3>
+                    <p slot="description">This is the description of project 1.</p>
+                </project-card>
+                
+                <project-card image="project2.jpg">
+                    <h3 slot="title">Project 2</h3>
+                    <p slot="description">This is the description of project 2.</p>
+                </project-card>
+            </div>
+        </div>
+    </div>
+    <div class="rdb-bar">
+        <div class="squeeze">
+            <h2 class="remodel">remodel</h2>
+            <h2 class="design">design</h2>
+            <h2 class="build">build</h2></div>
+        </div>
+        
+        <p>Imagine waking up every day in a home you absolutely love. That dream is within reach, and now is the perfect time to make it real.</p>
+        <p>Imagine waking up every day in a home you absolutely love. That dream is within reach, and now is the perfect time to make it real.</p>
+        <p>Imagine waking up every day in a home you absolutely love. That dream is within reach, and now is the perfect time to make it real.</p>
+        
+        <div class="rdb-bar">
+            <div class="squeeze">
+                <h2 class="remodel">remodel</h2>
+                <h2 class="design">design</h2>
+                <h2 class="build">build</h2>
+            </div>
+        </div>
+        
+        <p>Imagine waking up every day in a home you absolutely love. That dream is within reach, and now is the perfect time to make it real.</p>
+        <p>Imagine waking up every day in a home you absolutely love. That dream is within reach, and now is the perfect time to make it real.</p>
+        <p>Imagine waking up every day in a home you absolutely love. That dream is within reach, and now is the perfect time to make it real.</p>
+    </body>
+</html>
