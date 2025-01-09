@@ -1,4 +1,4 @@
 import projects from "/projects/projects.js";
 
 
-projects.aurora.page();
+projects.elk_grove.page();
