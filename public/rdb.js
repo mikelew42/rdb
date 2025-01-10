@@ -10,10 +10,15 @@ function onResize() {
     const windowWidth = window.innerWidth;
     
     // Add custom logic here
-    if (windowWidth < 1000) {
-        body.ac("break");
+    if (windowWidth >= 1000) {
+        body.rc("break mobile");
     } else {
-        body.rc("break");
+        if (windowWidth < 500){
+           body.ac("mobile"); 
+        } else {
+            body.rc("mobile");
+        }
+        body.ac("break");
     }
   }
   

@@ -1,7 +1,7 @@
 import { el, div, View, h1, h2, h3, p, is, Base } from "/module/app.js";
 import { header, footer } from "/rdb.js";
 
-
+const body = View.body();
 
 class Project {
 
@@ -14,6 +14,7 @@ class Project {
     }
 
     page(){
+        body.ac("project-page");
         header();
         div.c("banner", () => {
             div.c("chevron");
