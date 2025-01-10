@@ -1,6 +1,8 @@
 import { el, div, View, h1, h2, h3, p, is, Base } from "/module/app.js";
 import { header, footer } from "/rdb.js";
 
+
+
 class Project {
 
     preview(){
@@ -16,9 +18,11 @@ class Project {
         div.c("banner", () => {
             div.c("chevron");
             h1(this.name);
-        }).style("background-image", `url("/projects/warrenville-kitchen/img/banner.jpg")`);
-        el.c("main", "squeeze content",() => {
-            this.content();
+        }).style("background", `url("${this.img}") no-repeat center / cover`);
+        div.c("main-wrap", () => {
+            el.c("main", "squeeze content",() => {
+                this.content();
+            });
         });
         footer();
     }

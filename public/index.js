@@ -5,7 +5,16 @@ import projects from "/projects/projects.js";
 
 await app.ready;
 
-console.log("app.ready", performance.now());
+View.body().ac("home transparent-header");
+
+window.addEventListener("scroll", () => {
+    console.log("scrollY", window.scrollY);
+    if (window.scrollY > 165){
+        View.body().rc("transparent-header");
+    } else {
+        View.body().ac("transparent-header");
+    }
+});
 
 header();
 
