@@ -99,8 +99,9 @@ el.c("section", "transform", () => {
     div.c("transform-left", () => {});
     div.c("transform-right", () => {
         div.c("transform-right-content", () => {
-            h3("Transform your ", el.c("span", "home", "home"), ".");
-            h3("Upgrade your ", el.c("span", "life", "life"), ".");
+            // h3("Transform your ", el.c("span", "home", "home"), ".");
+            h3("Transform your ", el.c("span", "home", "home"), ".  Upgrade your ", el.c("span", "life", "life"), ".");
+            // h3("Upgrade your ", el.c("span", "life", "life"), ".");
             p("Your home should evolve with your needs, and renovations are the perfect way to bring your vision to life. Whether it’s a modern kitchen, a luxurious bathroom, or a refreshed living space, we specialize in creating stunning transformations.")
             div.c("btn-right", () => {
                 el.c("a", "btn", "Get Started", chevron()).attr("href", "/contact/");
