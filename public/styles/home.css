@@ -1,6 +1,6 @@
 /***  HERO ***/
-.hero { max-height: 200vw; background: radial-gradient(circle at 100% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url("/img/hero-low.jpg") no-repeat center center / cover;  height: 100vh; color: white; justify-content: center; align-items: center; }
-.break .hero { background-position: 80% center;}
+.hero { max-height: 200vw; background: radial-gradient(circle at 100% 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url("/img/hero-low.jpg") no-repeat center center / cover;  height: 100vh; color: white; justify-content: center; align-items: center; }
+.break .hero { background-position: 74% center;}
 
 .chevron { background: url("/img/chevron.svg") no-repeat center / contain; width: 3.4em; height: 2em; }
 .svg-chevron-wrap { margin-left: 1em; display: inline-block; display: flex; align-items: center; }
@@ -29,19 +29,17 @@
     /* font-size: 1.2em;  */
     margin-bottom: 1.6em; text-shadow: 0px 3px 3px rgba(0,0,0,0.8); }
 
-@media (max-width: 640px) {
-    .hero .squeeze { align-items: flex-end; }
-    .hero .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align:center;
-        font-size: 3.6vw; 
-        max-width: 100%; }
-    .hero .btn-row { width: 100%; }
-    .hero .btn-row > * { flex: 1; }
-    .hero p {font-size: 16px;}
-}
+.mobile .hero .squeeze { align-items: flex-end; }
+.mobile .hero .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+    font-size: 3.6vw; 
+    max-width: 100%; }
+.mobile .hero .btn-row { width: 100%; }
+.mobile .hero .btn-row > * { flex: 1; }
+.mobile .hero p {font-size: 16px;}
 
 
 /*  RDB BAR  */
@@ -64,13 +62,11 @@
 
 
 /* RECENT PROJECTS SECTION */
-.recent-projects {  position: relative; background: white; padding: 10em 0; }
+.recent-projects {  position: relative; padding: 10em 0; }
 .break .recent-projects { padding: 10vw 0; }
 .recent-projects .rdb-heading { margin-bottom: 4vw;  }
 .recent-projects .rdb-heading h2 {  text-align: left; }
 .herringbone { background: url("/img/herringbone.png") repeat; background-size: 15%; opacity: 0.1; }
-.background { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 0; }
-.recent-projects .squeeze { z-index: 1; position: relative;}
 
 .recent-projects .squeeze { display: flex; gap: 2vw; }
 .recent-projects .squeeze { z-index: 1; position: relative;}
@@ -121,7 +117,7 @@ section.transform .transform-left { box-shadow: inset 0px 2px 2px rgba(255,255,2
     padding: 4vw; 
     padding-right: 2vw;
 }
-.break .transform-right-content { margin: 0 auto; padding: 6vw 4vw 6vw;}
+.break .transform-right-content { margin: 0 auto; padding: 8vw 8vw 14vw;}
 .transform-right-content h3 {
     font-size: 1.4em; 
 }

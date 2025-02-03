@@ -4,7 +4,7 @@ import { el, div, View, h1, h2, h3, p, is, icon } from "/module/View/View.js";
 import Test, { test } from "/module/Test/Test.js";
 import socket from "/module/socket.js";
 
-View.stylesheet("/module/base.css");
+// View.stylesheet("/module/base.css");
 
 
 

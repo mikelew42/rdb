@@ -40,8 +40,11 @@ div.c("rdb-bar", () => {
     });
 });
 
-el.c("section", "recent-projects", () => {
-    div.c("background herringbone", () => {});
+el.c("section", "recent-projects has-backgrounds", () => {
+    div.c("backgrounds", () => {
+        div.c("background background-white");
+        div.c("background herringbone");
+    });
     div.c("squeeze", () => {
         div.c("projects-left", () => {
             div.c("rdb-heading", () => {0

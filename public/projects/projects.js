@@ -20,8 +20,8 @@ class Project {
             div.c("chevron");
             h1(this.name);
         }).style("background", `url("${this.img}") no-repeat center / cover`);
-        div.c("main-wrap", () => {
-            el.c("main", "squeeze content",() => {
+        div.c("main-wrap squeeze", () => {
+            el.c("main", "content",() => {
                 this.content();
             });
         });

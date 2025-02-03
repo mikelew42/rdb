@@ -1,7 +1,7 @@
 import app, { App, el, div, View, h1, h2, h3, p, is, Base } from "/module/app.js";
 import projects from "/projects/projects.js";
 
-View.stylesheet("styles/index.css");
+// View.stylesheet("/styles/index.css");
 
 const body = View.body();
 
@@ -20,31 +20,36 @@ function onResize() {
         }
         body.ac("break");
     }
-  }
-  
-  // Attach the resize event listener
-  window.addEventListener('resize', onResize);
-  
-  // Initial check on page load
-  onResize();
-  
+}
 
+// Attach the resize event listener
+window.addEventListener('resize', onResize);
+
+// Initial check on page load
+onResize();
+  
 export function header(){
     var btn;
     div.c("header-wrap", () => {
         el.c("header", "top-header", () => {
             div.c("squeeze", () => {
-                el.c("a", "logo").attr("href", "/");
-                el.c("nav", "top-nav", () => {
-                    // el.c("a", "nav-item", "Styles").attr("href", "/styles.html");
-                    el.c("a", "nav-item nav-item-home", "Home").attr("href", "/");
-                    el.c("a", "nav-item", "About").attr("href", "/about/");
-                    el.c("a", "nav-item", "Process").attr("href", "/process/");
-                    el.c("a", "nav-item", "Projects").attr("href", "/projects/");
-                    el.c("a", "nav-item btn", "Contact").attr("href", "/contact/");
-                    // div.c("nav-item btn", div.c("inner", "Contact"));
+                    // el.c("a", "logo").attr("href", "/");
+                div.c("logo-bar", () => {
+                    el.c("a", "logo").attr("href", "/");
+                    btn = div.c("menu-btns", hamburger(), ex());
                 });
-                btn = div.c("menu-btns", hamburger(), ex());
+                div.c("top-nav-wrap", () => {
+                    el.c("nav", "top-nav", () => {
+                        // el.c("a", "nav-item", "Styles").attr("href", "/styles/");
+                        el.c("a", "nav-item nav-item-home", "Home").attr("href", "/");
+                        el.c("a", "nav-item nav-item-about", "About").attr("href", "/about/");
+                        el.c("a", "nav-item nav-item-process", "Process").attr("href", "/process/");
+                        el.c("a", "nav-item nav-item-projects", "Projects").attr("href", "/projects/");
+                        el.c("a", "nav-item nav-item-contact btn", "Contact").attr("href", "/contact/");
+                        // div.c("nav-item btn", div.c("inner", "Contact"));
+                    });
+                        // btn = div.c("menu-btns", hamburger(), ex());
+                });
             });
         });
     });
