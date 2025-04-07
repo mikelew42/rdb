@@ -34,11 +34,13 @@ div.c("main-wrap squeeze", () => {
         div.c("about-experience-row about-columns columns", () => {
             div.c("about-experience about-block", () => {
                 h3("Experience");
-                p("RDB Remodeling Group has handled commercial and residential projects on many scales.  Our people know what your project needs, no matter what size.  Our policy of exclusively hiring forward-thinking innovators and managers means that we always create functional solutions to meet your needs at surprisingly reasonable costs.")
+                p("For over 40 years, RDB has handled commercial and residential projects on many scales.  Our people know what your project needs, no matter what size.  Our policy of exclusively hiring forward-thinking innovators and managers means that we always create functional solutions to meet your needs at surprisingly reasonable costs.")
             });
             div.c("about-experience-image about-column-image");
         });
-        div.c("about-logo-row");
+        div.c("about-logo-row", () => {
+            div.c("about-logo");
+        });
         div.c("about-communication-row about-columns columns", () => {
             div.c("about-communication-image about-column-image");
             div.c("about-communication about-block", () => {

@@ -80,7 +80,7 @@ el.c("section", "process", () => {
         div.c("columns 3-column", () => {
             div.c("col", () => {
                 h3("Getting Started");
-                p("What are your goals and priorities for your remodel?  Make your wish list and we can start with what you want most");
+                p("What are your goals and priorities for your remodel?  Make your wish list and we can start with what you want most.");
             });
             div.c("col", () => {
                 h3("Budget");
